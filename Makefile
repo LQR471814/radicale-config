@@ -4,3 +4,6 @@ image:
 run:
 	docker run -dp 5232:5232 -t lqr471814/radicale-config
 
+push:
+	docker push lqr471814/radicale-config
+
