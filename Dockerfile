@@ -5,5 +5,8 @@ RUN pip install radicale
 WORKDIR /etc/radicale
 COPY ./config.ini ./config
 
-CMD python3 -m radicale --storage-filesystem-folder=~/radicale/collections
+WORKDIR /root/radicale
+COPY ./users ./users
+
+CMD python3 -m radicale
 
